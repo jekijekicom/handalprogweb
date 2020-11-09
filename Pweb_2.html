@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+      /* Make image fully responsive */
+      .carousel-inner img {
+          width: 100%;
+          height: 100%;
+      }
+  </style>
+</head>
+
+<body>
+
+    <div class="jumbotron bg-dark text-white text-align left">
+        <h1 class="display-3">Dzaki's Blog</h1>
+        <h4>Learn, Share, Repeat</h4> 
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> 
+        <!-- NAVBAR dan Isinya -->
+        <a class="navbar-brand" href="#">About Me</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/jekijekicom/handalprogweb/blob/main/05211940000095_1.html" target="_blank">CSS 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/jekijekicom/handalprogweb/blob/main/05211940000095_2.html" target="_blank">CSS 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/jekijekicom/handalprogweb/blob/main/05211940000095_3.html" target="_blank">CSS 3</a>
+                </li>
+                <li class="nav-item">  
+                    <a class="nav-link" href="https://github.com/jekijekicom/handalprogweb/blob/main/05211940000095_4.html" target="_blank">CSS 4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/jekijekicom/handalprogweb/blob/main/05211940000095_5.html" target="_blank">CSS 5</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/jekijekicom/handalprogweb/blob/main/Pweb_1.html" target="_blank">Bootstrap</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <!-- Kolom Kiri (Profil; Link Tugas) -->
+            <div class="col-sm-4">
+                <h2>Profil</h2>
+                <div class="card" style="width:240px">
+                    <img class="card-img-top" src="foto-duduk.jpg" alt="ava card" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Alfian Dzaki</h4>
+                        <p class="card-text">Sedang menempuh perkuliahan di Institut Teknologi Sepuluh Nopember jurusan Sistem Informasi.</p>
+                        <a href="https://alfiandzakii.wixsite.com/mimpi" class="btn btn-primary">See More!</a>
+                    </div>
+                </div>
+                <br>
+                <h2>Link Tugas</h2>
+                <p> Beberapa eskplorasi tentang pemrograman web</p>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/jekijekicom/handalprogweb/blob/main/05211940000095_1.html">CSS 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/jekijekicom/handalprogweb/blob/main/05211940000095_2.html">CSS 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/jekijekicom/handalprogweb/blob/main/05211940000095_3.html">CSS 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/jekijekicom/handalprogweb/blob/main/05211940000095_4.html">CSS 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/jekijekicom/handalprogweb/blob/main/05211940000095_5.html">CSS 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/jekijekicom/handalprogweb/blob/main/Pweb_1.html">Bootstrap</a>
+                    </li>
+                </ul>
+                <hr class="d-sm-none">
+            </div>
+        
+            <!-- Kolom Kanan: Cerite-->
+            <div class="col-sm-8"> 
+                <h3 class="text-center">Swable Goes to Surabaya</h3>
+                <img src="IMG_0208.JPG" alt="foto di malang" width="100%" height="15%"> 
+                <p class="text-justify">Beberapa teman dari sma ternyata ada yang diterima di universitas di daerah Surabaya. Teman yang akan menjadi saksi perjuangan selama masa perkuliahan.</p>
+                <br>
+                <h3 class="text-center">Kupu-kupu Mati</h3>
+                <div id="muche" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicator-->
+                    <ul class="carousel-indicators">
+                        <li data-target="#muche" data-slide-to="0" class="active"></li>
+                        <li data-target="#muche" data-slide-to="1"></li>
+                        <li data-target="#muche" data-slide-to="2"></li>
+                    </ul>
+                   
+                    <!-- Slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="IMG_0447.JPG" alt="foto setelah suporteran" width="100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IMG_0446.JPG" alt="foto di jurusan malam" width="100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IMG_0332.JPG" alt="foto bendera suporter" width="100%">
+                        </div>
+                    </div>
+                   
+                    <!-- controller image-->
+                    <a class="carousel-control item" href="#muche" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control next" href="#muche" data-slide="next">
+                        <span class="carousel-control-next-item"></span>
+                    </a>
+                </div>
+
+                <p class="text-justify">Saya memilih untuk mengambil jurusan Sistem Informasi di ITS. Beberapa dari banyak hal yang telah dilalui bersama teman-teman sejurusan</p>
+            </div> 
+        </div>
+    </div> 
+
+    <div class="container fluid">
+        <div class="jumbotrun-fluid bg-secondary text-light text-center" style="margin-bottom: 0;">
+            <br>
+            <h4>More about me:</h4>
+            <i class="fab fa-line">dzky30</i>
+            <br><i class="fas fa-envelope">alfiandzakii@gmail.com</i>
+            <br><i class="fab fa-instagram">alfiandzki</i>
+            <br>
+        </div>
+    </div>
+            
+</body>
+
+</html>
+
+
+  
